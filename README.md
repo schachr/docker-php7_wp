@@ -32,3 +32,8 @@ Example:
     -v ${PWD}/www.conf:/usr/local/etc/php-fpm.d/www.conf \
     -v /var/www/wordpress:/var/www/wordpress \
     -p 127.0.0.1:9101:9000 schachr/php7_wp
+
+### Automatic Build details
+This image has a repository link to the underlying base image `php`. Whenever this receives an update this container will automatically build itself again.
+There is an `automatic build` dependency to the github repository https://github.com/schachr/docker-php7_wp as well.
+All you need to do is to pull it, remove the container (`docker rm`) if neccessary and restart it (`docker create/run`).
