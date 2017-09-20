@@ -31,4 +31,4 @@ Example:
     -h "docker-php7-wp" \
     -v ${PWD}/www.conf:/usr/local/etc/php-fpm.d/www.conf \
     -v /var/www/wordpress:/var/www/wordpress \
-    -p 127.0.0.1:9101:9000 schachr/docker-php7_wp
+    -p 127.0.0.1:9101:9000 schachr/php7_wp
